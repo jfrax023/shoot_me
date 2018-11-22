@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="shoot_me"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\cmake\Modules\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="shoot_me">
+				<Option output="/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/shoot_me" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lilith/Labo/C/Lab/shoot_me/include"/>
+					<Add directory="/usr/include/SDL"/>
+					<Add directory="/usr/local/include/fmod"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/Makefile&quot;  VERBOSE=1 shoot_me"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="shoot_me/fast">
+				<Option output="/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/shoot_me" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lilith/Labo/C/Lab/shoot_me/include"/>
+					<Add directory="/usr/include/SDL"/>
+					<Add directory="/usr/local/include/fmod"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/Makefile&quot;  VERBOSE=1 shoot_me/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/lilith/Labo/C/Lab/shoot_me/include/define.h">
+			<Option target="shoot_me"/>
+		</Unit>
+		<Unit filename="/home/lilith/Labo/C/Lab/shoot_me/include/utilities.h">
+			<Option target="shoot_me"/>
+		</Unit>
+		<Unit filename="/home/lilith/Labo/C/Lab/shoot_me/main.c">
+			<Option target="shoot_me"/>
+		</Unit>
+		<Unit filename="/home/lilith/Labo/C/Lab/shoot_me/src/utilities.c">
+			<Option target="shoot_me"/>
+		</Unit>
+		<Unit filename="/home/lilith/Labo/C/Lab/shoot_me/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/lilith/Labo/C/Lab/shoot_me/cmake/Modules/FindFMOD.cmake">
+			<Option virtualFolder="CMake Files\cmake\Modules\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

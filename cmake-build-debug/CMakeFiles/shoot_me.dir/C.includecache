@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/define.h
+
+../include/utilities.h
+
+/home/lilith/Labo/C/Lab/shoot_me/main.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+SDL/SDL.h
+-
+SDL/SDL_image.h
+-
+SDL/SDL_ttf.h
+-
+fmod/fmod.h
+-
+define.h
+/home/lilith/Labo/C/Lab/shoot_me/define.h
+utilities.h
+/home/lilith/Labo/C/Lab/shoot_me/utilities.h
+
+/home/lilith/Labo/C/Lab/shoot_me/src/utilities.c
+stdlib.h
+-
+stdio.h
+-
+SDL/SDL.h
+-
+
