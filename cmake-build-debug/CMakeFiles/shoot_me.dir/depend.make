@@ -3,7 +3,12 @@
 
 CMakeFiles/shoot_me.dir/main.c.o: ../include/define.h
 CMakeFiles/shoot_me.dir/main.c.o: ../include/utilities.h
+CMakeFiles/shoot_me.dir/main.c.o: ../include/window.h
 CMakeFiles/shoot_me.dir/main.c.o: ../main.c
 
 CMakeFiles/shoot_me.dir/src/utilities.c.o: ../src/utilities.c
+
+CMakeFiles/shoot_me.dir/src/window.c.o: ../include/define.h
+CMakeFiles/shoot_me.dir/src/window.c.o: ../include/utilities.h
+CMakeFiles/shoot_me.dir/src/window.c.o: ../src/window.c
 

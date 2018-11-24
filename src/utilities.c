@@ -38,3 +38,32 @@ void checkPointer(void *pointer, char message[]){
         exit(EXIT_FAILURE);
     }
 }
+
+/**
+ * Initialize the player name with _ .
+ * @param playerName char the variable where the player name is store .
+ */
+void initPlayerName(char playerName[]){
+    for(int i = 0; i < 10; i++){
+        if(i == 9){
+            playerName[i] = '\0';
+        } else{
+            playerName[i] = '_';
+        }
+    }
+}
+
+
+/**
+ * Create an array based on the alphabet passed in parameter .
+ * @param arrayAlphabet char An array where put the alphabet .
+ * @param alphabet char The alphabet string .
+ */
+void createArrayAlphabet(char arrayAlphabet[], char alphabet[]){
+    int i = 0;
+    while (alphabet[i] != '\0'){
+        sprintf(&arrayAlphabet[i], "%c", alphabet[i]);
+        //arrayAlphabet[i] = alphabet[i];
+        i++;
+    }
+}

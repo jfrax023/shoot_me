@@ -90,10 +90,16 @@
 		<Unit filename="/home/lilith/Labo/C/Lab/shoot_me/include/utilities.h">
 			<Option target="shoot_me"/>
 		</Unit>
+		<Unit filename="/home/lilith/Labo/C/Lab/shoot_me/include/window.h">
+			<Option target="shoot_me"/>
+		</Unit>
 		<Unit filename="/home/lilith/Labo/C/Lab/shoot_me/main.c">
 			<Option target="shoot_me"/>
 		</Unit>
 		<Unit filename="/home/lilith/Labo/C/Lab/shoot_me/src/utilities.c">
+			<Option target="shoot_me"/>
+		</Unit>
+		<Unit filename="/home/lilith/Labo/C/Lab/shoot_me/src/window.c">
 			<Option target="shoot_me"/>
 		</Unit>
 		<Unit filename="/home/lilith/Labo/C/Lab/shoot_me/CMakeLists.txt">

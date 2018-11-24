@@ -10,6 +10,12 @@
 
 ../include/utilities.h
 
+../include/window.h
+SDL/SDL.h
+-
+fmod/fmod.h
+-
+
 /home/lilith/Labo/C/Lab/shoot_me/main.c
 stdio.h
 -
@@ -29,12 +35,26 @@ define.h
 /home/lilith/Labo/C/Lab/shoot_me/define.h
 utilities.h
 /home/lilith/Labo/C/Lab/shoot_me/utilities.h
+window.h
+/home/lilith/Labo/C/Lab/shoot_me/window.h
 
-/home/lilith/Labo/C/Lab/shoot_me/src/utilities.c
+/home/lilith/Labo/C/Lab/shoot_me/src/window.c
+stdio.h
+-
 stdlib.h
 -
-stdio.h
+string.h
 -
 SDL/SDL.h
 -
+SDL/SDL_image.h
+-
+SDL/SDL_ttf.h
+-
+fmod/fmod.h
+-
+define.h
+/home/lilith/Labo/C/Lab/shoot_me/src/define.h
+utilities.h
+/home/lilith/Labo/C/Lab/shoot_me/src/utilities.h
 

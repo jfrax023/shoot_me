@@ -4,6 +4,7 @@
  * function :
  *  myPause() => this function pause the program .
  *  void checkPointer(void *pointer, char message[]) => check if the pointer is null
+ *  void initPlayerName(char playerName[]) => initialize the player name with _ .
  */
 
 #ifndef SHOOT_ME_UTILITIES_H
@@ -20,5 +21,18 @@ void myPause();
  * @param message char The message to display .
  */
 void checkPointer(void *pointer, char message[]);
+
+/**
+ * Initialize the player name with _ .
+ * @param playerName char the variable where the player name is store .
+ */
+void initPlayerName(char playerName[]);
+
+/**
+ * Create an array based on the alphabet passed in parameter .
+ * @param arrayAlphabet char An array where put the alphabet .
+ * @param alphabet char The alphabet string .
+ */
+void createArrayAlphabet(char arrayAlphabet[], char alphabet[]);
 
 #endif //SHOOT_ME_UTILITIES_H

@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/home/lilith/Labo/C/Lab/shoot_me/main.c" "/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/CMakeFiles/shoot_me.dir/main.c.o"
   "/home/lilith/Labo/C/Lab/shoot_me/src/utilities.c" "/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/CMakeFiles/shoot_me.dir/src/utilities.c.o"
+  "/home/lilith/Labo/C/Lab/shoot_me/src/window.c" "/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/CMakeFiles/shoot_me.dir/src/window.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

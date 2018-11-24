@@ -4,6 +4,11 @@
 CMakeFiles/shoot_me.dir/main.c.o
  ../include/define.h
  ../include/utilities.h
+ ../include/window.h
  /home/lilith/Labo/C/Lab/shoot_me/main.c
 CMakeFiles/shoot_me.dir/src/utilities.c.o
  /home/lilith/Labo/C/Lab/shoot_me/src/utilities.c
+CMakeFiles/shoot_me.dir/src/window.c.o
+ ../include/define.h
+ ../include/utilities.h
+ /home/lilith/Labo/C/Lab/shoot_me/src/window.c

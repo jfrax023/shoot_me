@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/shoot_me.dir/main.c.o"
   "CMakeFiles/shoot_me.dir/src/utilities.c.o"
+  "CMakeFiles/shoot_me.dir/src/window.c.o"
   "shoot_me.pdb"
   "shoot_me"
 )

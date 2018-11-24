@@ -7,6 +7,7 @@
 #include <fmod/fmod.h>
 #include "define.h"
 #include "utilities.h"
+#include "window.h"
 
 
 int main() {
@@ -16,7 +17,7 @@ int main() {
     // fmod var
     FMOD_SYSTEM *pFSys = NULL;
     // divers
-    char iconPath[100] = IMG_DIVERS_PATH;
+    char iconPath[100] = IMG_DIVERS_PATH, playerName[10] = "";
 
 
     /********************
@@ -53,7 +54,10 @@ int main() {
     checkPointer(pRootWin, "Can't load main windows .");
 
     SDL_FillRect(pRootWin, NULL, SDL_MapRGB(pRootWin->format, 255, 255, 255));
-    SDL_Flip(pRootWin);
+
+
+    displayAccueil(pRootWin, pFSys);
+    displayNameSelection(pRootWin, pFSys, playerName);
 
     myPause();
 
