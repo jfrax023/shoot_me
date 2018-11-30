@@ -3,9 +3,24 @@
 
 CMakeFiles/shoot_me.dir/main.c.o
  ../include/define.h
+ ../include/game.h
  ../include/utilities.h
  ../include/window.h
  /home/lilith/Labo/C/Lab/shoot_me/main.c
+CMakeFiles/shoot_me.dir/src/game.c.o
+ ../include/define.h
+ ../include/target_helper.h
+ ../include/threading.h
+ ../include/utilities.h
+ /home/lilith/Labo/C/Lab/shoot_me/src/game.c
+CMakeFiles/shoot_me.dir/src/target_helper.c.o
+ ../include/define.h
+ ../include/utilities.h
+ /home/lilith/Labo/C/Lab/shoot_me/src/target_helper.c
+CMakeFiles/shoot_me.dir/src/threading.c.o
+ ../include/define.h
+ ../include/utilities.h
+ /home/lilith/Labo/C/Lab/shoot_me/src/threading.c
 CMakeFiles/shoot_me.dir/src/utilities.c.o
  /home/lilith/Labo/C/Lab/shoot_me/src/utilities.c
 CMakeFiles/shoot_me.dir/src/window.c.o

@@ -8,6 +8,7 @@
 #include "define.h"
 #include "utilities.h"
 #include "window.h"
+#include "game.h"
 
 
 int main() {
@@ -18,6 +19,9 @@ int main() {
     FMOD_SYSTEM *pFSys = NULL;
     // divers
     char iconPath[100] = IMG_DIVERS_PATH, playerName[10] = "";
+    int level = 1, stayIn = 1;
+
+    Target target[NB_TARGET] = {0, NULL};
 
 
     /********************
@@ -58,6 +62,18 @@ int main() {
 
     displayAccueil(pRootWin, pFSys);
     displayNameSelection(pRootWin, pFSys, playerName);
+
+    // main game code
+    while (level <= NB_LEVEL){
+        if(level == 1){
+            loadingGame(pRootWin, target, level, 1);
+        } else{
+            loadingGame(pRootWin, target, level, 0);
+        }
+        cleanWindow(pRootWin);
+        SDL_Flip(pRootWin);
+        level++;
+    }
 
     myPause();
 

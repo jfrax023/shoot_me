@@ -5,6 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/home/lilith/Labo/C/Lab/shoot_me/main.c" "/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/CMakeFiles/shoot_me.dir/main.c.o"
+  "/home/lilith/Labo/C/Lab/shoot_me/src/game.c" "/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/CMakeFiles/shoot_me.dir/src/game.c.o"
+  "/home/lilith/Labo/C/Lab/shoot_me/src/target_helper.c" "/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/CMakeFiles/shoot_me.dir/src/target_helper.c.o"
+  "/home/lilith/Labo/C/Lab/shoot_me/src/threading.c" "/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/CMakeFiles/shoot_me.dir/src/threading.c.o"
   "/home/lilith/Labo/C/Lab/shoot_me/src/utilities.c" "/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/CMakeFiles/shoot_me.dir/src/utilities.c.o"
   "/home/lilith/Labo/C/Lab/shoot_me/src/window.c" "/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/CMakeFiles/shoot_me.dir/src/window.c.o"
   )

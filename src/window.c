@@ -32,7 +32,7 @@ void displayAccueil(SDL_Surface *pRootWin, FMOD_SYSTEM *pFSys){
     TTF_Font *font = NULL;
 
     int stayIn = 1, currentTime = 0, backTime = 0;
-    char musicPath[100] = MUSIC_PATH, fontPath[100] = FONTS_PATH, bgPath[100] = IMG_DIVERS_PATH;
+    char musicPath[MEDIUM_ARRAY] = MUSIC_PATH, fontPath[MEDIUM_ARRAY] = FONTS_PATH, bgPath[MEDIUM_ARRAY] = IMG_DIVERS_PATH;
     char textToDisplay[] = "Tapez enter pour jouer";
 
     // load data in var
@@ -135,8 +135,8 @@ void displayNameSelection(SDL_Surface *pRootWin, FMOD_SYSTEM *pFSys, char player
 
     char alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789", alphabetLetter[] = "";
     // path
-    char overlayPath[100] = IMG_DIVERS_PATH, moveSoundPath[100] = SOUNDS_PATH, selectSoundPath[100] = SOUNDS_PATH;
-    char fontPath[100] = FONTS_PATH, arrayAlphabet[37] = "";
+    char overlayPath[MEDIUM_ARRAY] = IMG_DIVERS_PATH, moveSoundPath[MEDIUM_ARRAY] = SOUNDS_PATH;
+    char selectSoundPath[MEDIUM_ARRAY] = SOUNDS_PATH, fontPath[MEDIUM_ARRAY] = FONTS_PATH, arrayAlphabet[37] = "";
 
     // load data in var
 
@@ -225,6 +225,7 @@ void displayNameSelection(SDL_Surface *pRootWin, FMOD_SYSTEM *pFSys, char player
                         if(playerName[currentPlayerNameLetter] != '\0'){
                             playerName[currentPlayerNameLetter] = arrayAlphabet[currentLetter];
                             currentPlayerNameLetter++;
+                            FMOD_System_PlaySound(pFSys, soSelect, 0, 0, NULL);
                         }
                         break;
                     case SDLK_RETURN:
@@ -248,7 +249,7 @@ void displayNameSelection(SDL_Surface *pRootWin, FMOD_SYSTEM *pFSys, char player
                 break;
         }
         // create and blit surface
-        SDL_FillRect(pRootWin, NULL, SDL_MapRGB(pRootWin->format, 255, 255, 255));
+        cleanWindow(pRootWin);
         SDL_BlitSurface(psOverlay, NULL, pRootWin, &overlayPos);
 
         // create letter surface
@@ -295,7 +296,80 @@ void displayNameSelection(SDL_Surface *pRootWin, FMOD_SYSTEM *pFSys, char player
 }
 
 
+/**
+ * DEPRECIED
+ * Loading and display the loading page to show what level we will play .
+ * @param pRootWin SDL_Surface A pointer to the main window .
+ * @param level int An flag to tell what image we need to load .
+ */
+void displayLoadingScreen(SDL_Surface *pRootWin, int level){
+    // variable
+    SDL_Surface *psOverlay = NULL, *psLevelImg = NULL;
+    SDL_Rect overlayPos, levelImgPos;
+    SDL_Event event;
 
+    int stayIn = 1, backTime = 0, currentTime = 0, timer = 0;
+    char overlayPath[MEDIUM_ARRAY] = IMG_DIVERS_PATH, levelPath[MEDIUM_ARRAY] = IMG_LEVELS_MINI_PATH;
+
+    // load overlay
+    psOverlay = IMG_Load(strcat(overlayPath, "loading.png"));
+    checkPointer(psOverlay, "Can't load overlay image in displayLoadingScreen");
+
+    // load levelImg , we use the parameter "level" to tell what image we need to load
+    switch (level){
+        case 1:
+            psLevelImg = IMG_Load(strcat(levelPath, "castle_mini.png"));
+            break;
+        case 2:
+            psLevelImg = IMG_Load(strcat(levelPath, "ville_mini.png"));
+            break;
+        case 3:
+            psLevelImg = IMG_Load(strcat(levelPath, "city_mini.png"));
+            break;
+        case 4:
+            psLevelImg = IMG_Load(strcat(levelPath, "forest_mini.png"));
+            break;
+    }
+    checkPointer(psLevelImg, "Can't load level mini image in displayLoadingScreen");
+
+    overlayPos.x = 0;
+    overlayPos.y = 0;
+
+    levelImgPos.x = (u_int16_t) (pRootWin->w / 2 - psLevelImg->w / 2);
+    levelImgPos.y = (u_int16_t) (pRootWin->h / 2 - psLevelImg->h / 2);
+
+    // event while
+    while (stayIn){
+        SDL_PollEvent(&event);
+        switch (event.type){
+            case SDL_QUIT:
+                SDL_FreeSurface(psOverlay);
+                SDL_FreeSurface(psLevelImg);
+                SDL_Quit();
+                exit(EXIT_SUCCESS);
+        }
+
+        currentTime = SDL_GetTicks();
+        // if 1 sec is passed
+        if(currentTime - backTime >= 1000){
+            timer++;
+            backTime = currentTime;
+        }
+
+        cleanWindow(pRootWin);
+        SDL_BlitSurface(psOverlay, NULL, pRootWin, &overlayPos);
+        SDL_BlitSurface(psLevelImg, NULL, pRootWin, &levelImgPos);
+        SDL_Flip(pRootWin);
+
+        if(timer == 10){
+            stayIn = 0;
+        }
+
+    }
+
+    SDL_FreeSurface(psOverlay);
+    SDL_FreeSurface(psLevelImg);
+}
 
 
 

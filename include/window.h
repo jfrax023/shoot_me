@@ -4,6 +4,7 @@
  * function :
  *  void displayAccueil(SDL_Surface *pRootWin, FMOD_SYSTEM *pFSys) => display the accueil image .
  * void displayNameSelection(SDL_Surface *pRootWin, FMOD_SYSTEM *pFSys, char playerName[]) => display the name selection menu .
+ * void displayLoadingScreen(SDL_Surface *pRootWin, int level) => display the loading page .
  */
 
 #ifndef SHOOT_ME_WINDOW_H
@@ -29,4 +30,5 @@ void displayAccueil(SDL_Surface *pRootWin, FMOD_SYSTEM *pFSys);
 void displayNameSelection(SDL_Surface *pRootWin, FMOD_SYSTEM *pFSys, char playerName[]);
 
 
+void displayLoadingScreen(SDL_Surface *pRootWin, int level);
 #endif //SHOOT_ME_WINDOW_H

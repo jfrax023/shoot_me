@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/lilith/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/182.5107.21/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/lilith/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.4284.156/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/lilith/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/182.5107.21/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/lilith/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.4284.156/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/lilith/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/182.5107.21/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/lilith/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.4284.156/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/lilith/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/182.5107.21/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/lilith/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.4284.156/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -150,6 +150,87 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/shoot_me.dir/build.make CMakeFiles/shoot_me.dir/main.c.s
 .PHONY : main.c.s
 
+src/game.o: src/game.c.o
+
+.PHONY : src/game.o
+
+# target to build an object file
+src/game.c.o:
+	$(MAKE) -f CMakeFiles/shoot_me.dir/build.make CMakeFiles/shoot_me.dir/src/game.c.o
+.PHONY : src/game.c.o
+
+src/game.i: src/game.c.i
+
+.PHONY : src/game.i
+
+# target to preprocess a source file
+src/game.c.i:
+	$(MAKE) -f CMakeFiles/shoot_me.dir/build.make CMakeFiles/shoot_me.dir/src/game.c.i
+.PHONY : src/game.c.i
+
+src/game.s: src/game.c.s
+
+.PHONY : src/game.s
+
+# target to generate assembly for a file
+src/game.c.s:
+	$(MAKE) -f CMakeFiles/shoot_me.dir/build.make CMakeFiles/shoot_me.dir/src/game.c.s
+.PHONY : src/game.c.s
+
+src/target_helper.o: src/target_helper.c.o
+
+.PHONY : src/target_helper.o
+
+# target to build an object file
+src/target_helper.c.o:
+	$(MAKE) -f CMakeFiles/shoot_me.dir/build.make CMakeFiles/shoot_me.dir/src/target_helper.c.o
+.PHONY : src/target_helper.c.o
+
+src/target_helper.i: src/target_helper.c.i
+
+.PHONY : src/target_helper.i
+
+# target to preprocess a source file
+src/target_helper.c.i:
+	$(MAKE) -f CMakeFiles/shoot_me.dir/build.make CMakeFiles/shoot_me.dir/src/target_helper.c.i
+.PHONY : src/target_helper.c.i
+
+src/target_helper.s: src/target_helper.c.s
+
+.PHONY : src/target_helper.s
+
+# target to generate assembly for a file
+src/target_helper.c.s:
+	$(MAKE) -f CMakeFiles/shoot_me.dir/build.make CMakeFiles/shoot_me.dir/src/target_helper.c.s
+.PHONY : src/target_helper.c.s
+
+src/threading.o: src/threading.c.o
+
+.PHONY : src/threading.o
+
+# target to build an object file
+src/threading.c.o:
+	$(MAKE) -f CMakeFiles/shoot_me.dir/build.make CMakeFiles/shoot_me.dir/src/threading.c.o
+.PHONY : src/threading.c.o
+
+src/threading.i: src/threading.c.i
+
+.PHONY : src/threading.i
+
+# target to preprocess a source file
+src/threading.c.i:
+	$(MAKE) -f CMakeFiles/shoot_me.dir/build.make CMakeFiles/shoot_me.dir/src/threading.c.i
+.PHONY : src/threading.c.i
+
+src/threading.s: src/threading.c.s
+
+.PHONY : src/threading.s
+
+# target to generate assembly for a file
+src/threading.c.s:
+	$(MAKE) -f CMakeFiles/shoot_me.dir/build.make CMakeFiles/shoot_me.dir/src/threading.c.s
+.PHONY : src/threading.c.s
+
 src/utilities.o: src/utilities.c.o
 
 .PHONY : src/utilities.o
@@ -216,6 +297,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/game.o"
+	@echo "... src/game.i"
+	@echo "... src/game.s"
+	@echo "... src/target_helper.o"
+	@echo "... src/target_helper.i"
+	@echo "... src/target_helper.s"
+	@echo "... src/threading.o"
+	@echo "... src/threading.i"
+	@echo "... src/threading.s"
 	@echo "... src/utilities.o"
 	@echo "... src/utilities.i"
 	@echo "... src/utilities.s"

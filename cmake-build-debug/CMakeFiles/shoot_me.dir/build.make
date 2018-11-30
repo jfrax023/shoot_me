@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/lilith/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/182.5107.21/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/lilith/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.4284.156/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/lilith/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/182.5107.21/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/lilith/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.4284.156/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -96,11 +96,53 @@ CMakeFiles/shoot_me.dir/src/window.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/shoot_me.dir/src/window.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lilith/Labo/C/Lab/shoot_me/src/window.c -o CMakeFiles/shoot_me.dir/src/window.c.s
 
+CMakeFiles/shoot_me.dir/src/target_helper.c.o: CMakeFiles/shoot_me.dir/flags.make
+CMakeFiles/shoot_me.dir/src/target_helper.c.o: ../src/target_helper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/shoot_me.dir/src/target_helper.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/shoot_me.dir/src/target_helper.c.o   -c /home/lilith/Labo/C/Lab/shoot_me/src/target_helper.c
+
+CMakeFiles/shoot_me.dir/src/target_helper.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/shoot_me.dir/src/target_helper.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lilith/Labo/C/Lab/shoot_me/src/target_helper.c > CMakeFiles/shoot_me.dir/src/target_helper.c.i
+
+CMakeFiles/shoot_me.dir/src/target_helper.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/shoot_me.dir/src/target_helper.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lilith/Labo/C/Lab/shoot_me/src/target_helper.c -o CMakeFiles/shoot_me.dir/src/target_helper.c.s
+
+CMakeFiles/shoot_me.dir/src/game.c.o: CMakeFiles/shoot_me.dir/flags.make
+CMakeFiles/shoot_me.dir/src/game.c.o: ../src/game.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/shoot_me.dir/src/game.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/shoot_me.dir/src/game.c.o   -c /home/lilith/Labo/C/Lab/shoot_me/src/game.c
+
+CMakeFiles/shoot_me.dir/src/game.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/shoot_me.dir/src/game.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lilith/Labo/C/Lab/shoot_me/src/game.c > CMakeFiles/shoot_me.dir/src/game.c.i
+
+CMakeFiles/shoot_me.dir/src/game.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/shoot_me.dir/src/game.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lilith/Labo/C/Lab/shoot_me/src/game.c -o CMakeFiles/shoot_me.dir/src/game.c.s
+
+CMakeFiles/shoot_me.dir/src/threading.c.o: CMakeFiles/shoot_me.dir/flags.make
+CMakeFiles/shoot_me.dir/src/threading.c.o: ../src/threading.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/shoot_me.dir/src/threading.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/shoot_me.dir/src/threading.c.o   -c /home/lilith/Labo/C/Lab/shoot_me/src/threading.c
+
+CMakeFiles/shoot_me.dir/src/threading.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/shoot_me.dir/src/threading.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lilith/Labo/C/Lab/shoot_me/src/threading.c > CMakeFiles/shoot_me.dir/src/threading.c.i
+
+CMakeFiles/shoot_me.dir/src/threading.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/shoot_me.dir/src/threading.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lilith/Labo/C/Lab/shoot_me/src/threading.c -o CMakeFiles/shoot_me.dir/src/threading.c.s
+
 # Object files for target shoot_me
 shoot_me_OBJECTS = \
 "CMakeFiles/shoot_me.dir/main.c.o" \
 "CMakeFiles/shoot_me.dir/src/utilities.c.o" \
-"CMakeFiles/shoot_me.dir/src/window.c.o"
+"CMakeFiles/shoot_me.dir/src/window.c.o" \
+"CMakeFiles/shoot_me.dir/src/target_helper.c.o" \
+"CMakeFiles/shoot_me.dir/src/game.c.o" \
+"CMakeFiles/shoot_me.dir/src/threading.c.o"
 
 # External object files for target shoot_me
 shoot_me_EXTERNAL_OBJECTS =
@@ -108,6 +150,9 @@ shoot_me_EXTERNAL_OBJECTS =
 shoot_me: CMakeFiles/shoot_me.dir/main.c.o
 shoot_me: CMakeFiles/shoot_me.dir/src/utilities.c.o
 shoot_me: CMakeFiles/shoot_me.dir/src/window.c.o
+shoot_me: CMakeFiles/shoot_me.dir/src/target_helper.c.o
+shoot_me: CMakeFiles/shoot_me.dir/src/game.c.o
+shoot_me: CMakeFiles/shoot_me.dir/src/threading.c.o
 shoot_me: CMakeFiles/shoot_me.dir/build.make
 shoot_me: /usr/lib/x86_64-linux-gnu/libSDLmain.a
 shoot_me: /usr/lib/x86_64-linux-gnu/libSDL.so
@@ -115,7 +160,7 @@ shoot_me: /usr/lib/x86_64-linux-gnu/libSDL_image.so
 shoot_me: /usr/lib/x86_64-linux-gnu/libSDL_ttf.so
 shoot_me: /usr/local/lib/libfmod.so
 shoot_me: CMakeFiles/shoot_me.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable shoot_me"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lilith/Labo/C/Lab/shoot_me/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable shoot_me"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/shoot_me.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

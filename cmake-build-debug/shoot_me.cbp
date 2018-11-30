@@ -87,6 +87,15 @@
 		<Unit filename="/home/lilith/Labo/C/Lab/shoot_me/include/define.h">
 			<Option target="shoot_me"/>
 		</Unit>
+		<Unit filename="/home/lilith/Labo/C/Lab/shoot_me/include/game.h">
+			<Option target="shoot_me"/>
+		</Unit>
+		<Unit filename="/home/lilith/Labo/C/Lab/shoot_me/include/target_helper.h">
+			<Option target="shoot_me"/>
+		</Unit>
+		<Unit filename="/home/lilith/Labo/C/Lab/shoot_me/include/threading.h">
+			<Option target="shoot_me"/>
+		</Unit>
 		<Unit filename="/home/lilith/Labo/C/Lab/shoot_me/include/utilities.h">
 			<Option target="shoot_me"/>
 		</Unit>
@@ -94,6 +103,15 @@
 			<Option target="shoot_me"/>
 		</Unit>
 		<Unit filename="/home/lilith/Labo/C/Lab/shoot_me/main.c">
+			<Option target="shoot_me"/>
+		</Unit>
+		<Unit filename="/home/lilith/Labo/C/Lab/shoot_me/src/game.c">
+			<Option target="shoot_me"/>
+		</Unit>
+		<Unit filename="/home/lilith/Labo/C/Lab/shoot_me/src/target_helper.c">
+			<Option target="shoot_me"/>
+		</Unit>
+		<Unit filename="/home/lilith/Labo/C/Lab/shoot_me/src/threading.c">
 			<Option target="shoot_me"/>
 		</Unit>
 		<Unit filename="/home/lilith/Labo/C/Lab/shoot_me/src/utilities.c">
